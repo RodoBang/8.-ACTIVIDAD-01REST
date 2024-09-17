@@ -35,7 +35,7 @@ function getFirstAvailableId() {
 }
 function SortTasks() {
     tasks.sort((a, b) => a.id - b.id);
-}
+};
 function createTask(title, description) {
     const newTask = {
         id: getFirstAvailableId(),
