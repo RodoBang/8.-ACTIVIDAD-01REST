@@ -35,6 +35,13 @@ router.get('/:id', (req, res) => {
     }
 });
 
+/*router.get('/:id', (req, res) => {
+    
+    const {id } = req.params;
+    const task = taskController.getTaskById(id);
+    res.status(200).json(task);
+})*/
+
 router.put('/:id', (req, res) => {
     const id = parseInt(req.params.id); // Convertimos id a número
     const updateFields = req.body; // Obtenemos los campos que deseamos actualizar
